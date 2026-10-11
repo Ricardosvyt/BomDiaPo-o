@@ -1,0 +1,32 @@
+@import url('../styles.css');
+
+.main-nav.open { display: flex; }
+.radio-section { background: #d7f75f; padding: 68px 0; }
+.radio-card { display: grid; grid-template-columns: 100px 1fr auto; gap: 25px; align-items: center; }
+.radio-disc { width: 92px; height: 92px; border-radius: 50%; background: #16251f; color: #d7f75f; display: grid; place-items: center; font-size: 35px; box-shadow: 0 0 0 9px rgba(22,37,31,.12); animation: spin 12s linear infinite; }
+.radio-card h2 { font-size: 34px; margin: 7px 0; }
+.radio-card p { margin: 0; color: #46615d; font-size: 13px; }
+.radio-live { color: #fa754d; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.radio-controls { display: flex; align-items: center; gap: 14px; }
+.radio-play { border: 0; width: 54px; height: 54px; border-radius: 50%; background: #16251f; color: #fff; cursor: pointer; font-size: 20px; }
+.radio-play:hover { transform: scale(1.06); }
+.admin-page { min-height: 100vh; background: #f4f0e8; }
+.admin-header { padding: 22px 0; background: #16251f; color: #fff; }
+.admin-header .brand { color: #fff; }
+.admin-layout { display: grid; grid-template-columns: 230px 1fr; min-height: calc(100vh - 78px); }
+.admin-sidebar { background: #101d19; padding: 35px 20px; }
+.admin-sidebar a { display: block; color: #9aaea5; text-decoration: none; padding: 13px 14px; font-size: 13px; }
+.admin-sidebar a.active, .admin-sidebar a:hover { color: #d7f75f; background: #253a32; }
+.admin-content { padding: 55px clamp(22px, 5vw, 70px); }
+.admin-content h1 { font-size: 52px; margin-bottom: 10px; }
+.admin-subtitle { color: #71817a; margin-bottom: 35px; }
+.admin-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 35px; }
+.admin-stat { background: #fff; border: 1px solid #d9ddd4; padding: 23px; }
+.admin-stat small { display: block; color: #71817a; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+.admin-stat strong { display: block; font: 700 36px var(--serif); margin-top: 24px; }
+.admin-table { width: 100%; background: #fff; border-collapse: collapse; border: 1px solid #d9ddd4; }
+.admin-table th, .admin-table td { text-align: left; padding: 17px 20px; border-bottom: 1px solid #d9ddd4; font-size: 12px; }
+.admin-table th { color: #71817a; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
+.status { display: inline-block; padding: 6px 9px; background: #d7f75f; font-size: 10px; font-weight: 700; }
+.admin-button { border: 0; background: #fa754d; color: #16251f; padding: 13px 16px; font-weight: 700; cursor: pointer; }
+@media (max-width: 700px) { .radio-card { grid-template-columns: 70px 1fr; } .radio-disc { width: 65px; height: 65px; font-size: 24px; } .radio-controls { grid-column: 2; } .admin-layout { grid-template-columns: 1fr; } .admin-sidebar { display: flex; overflow-x: auto; padding: 10px; } .admin-sidebar a { white-space: nowrap; } .admin-cards { grid-template-columns: 1fr; } .admin-content h1 { font-size: 42px; } .admin-table { min-width: 650px; } .admin-table-wrap { overflow-x: auto; } }
